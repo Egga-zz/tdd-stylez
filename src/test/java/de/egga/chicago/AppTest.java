@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ThingTest {
+public class AppTest {
 
     @Test
     public void it_should_call_for_action() {
-        Thing thing = new Thing();
-        String value = thing.callForAction();
+        App app = new App();
+        String value = app.callForAction();
         assertThat(value).isEqualTo("Done.");
     }
 }

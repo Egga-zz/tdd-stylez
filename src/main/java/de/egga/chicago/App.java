@@ -1,6 +1,6 @@
 package de.egga.chicago;
 
-public class Thing {
+public class App {
 
     public String callForAction() {
         return "Done.";
