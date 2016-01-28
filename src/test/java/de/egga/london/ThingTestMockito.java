@@ -1,7 +1,5 @@
 package de.egga.london;
 
-import de.egga.london.Application;
-import de.egga.london.MessageQueue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
