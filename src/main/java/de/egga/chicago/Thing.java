@@ -1,8 +1,5 @@
 package de.egga.chicago;
 
-/**
- * @author egga
- */
 public class Thing {
 
     public String callForAction() {
