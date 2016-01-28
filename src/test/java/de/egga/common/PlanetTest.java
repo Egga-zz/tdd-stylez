@@ -12,7 +12,7 @@ public class PlanetTest {
 
     @Test
     public void it_should_add_and_return_living_being() {
-        Being hanSolo = new Being(HUMAN);
+        Being hanSolo = new Being(HUMAN, "Han Solo");
         planet.add(hanSolo);
         assertThat(planet.getCitizens()).containsExactly(hanSolo);
     }
