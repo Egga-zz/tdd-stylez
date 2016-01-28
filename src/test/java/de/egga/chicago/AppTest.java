@@ -33,7 +33,7 @@ public class AppTest {
     }
 
     @Test
-    public void it_should_not_find_character_weak_with_the_force() {
+    public void it_should_not_find_non_jedi_character() {
         Planet planet = planetWith(han);
         List<Character> candidates = app.searchPlanet(planet);
         assertThat(candidates).isEmpty();

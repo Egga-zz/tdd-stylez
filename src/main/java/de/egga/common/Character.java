@@ -9,7 +9,7 @@ public class Character {
 
     private final Species species;
     private final String name;
-    private boolean isStrongWithForce = false;
+    private boolean isJedi = false;
 
     public Character(Species species) {
         this(species, null);
@@ -29,15 +29,15 @@ public class Character {
     }
 
     public void train() {
-        isStrongWithForce = true;
+        isJedi = true;
     }
 
     public boolean isHuman() {
         return species == HUMAN;
     }
 
-    public boolean isStrongWithForce() {
-        return isStrongWithForce;
+    public boolean isJedi() {
+        return isJedi;
     }
 
     public boolean isCalled(String name) {

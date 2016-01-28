@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static de.egga.common.CharacterFactory.defaultHuman;
 import static de.egga.common.CharacterFactory.humanNamed;
+import static de.egga.common.CharacterFactory.trainedHuman;
 import static de.egga.common.Species.HUMAN;
 import static de.egga.common.Species.WOOKIE;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -26,17 +27,17 @@ public class CharacterTest {
     }
 
     @Test
-    public void untrained_should_be_weak_with_force() {
+    public void untrained_should_not_be_jedi() {
         Character character = defaultHuman();
-        boolean isStrongWithForce = character.isStrongWithForce();
-        assertThat(isStrongWithForce).isFalse();
+        boolean isJedi = character.isJedi();
+        assertThat(isJedi).isFalse();
     }
 
     @Test
-    public void trained_should_be_strong_with_force() {
-        Character character = CharacterFactory.trainedHuman();
-        boolean isStrongWithForce = character.isStrongWithForce();
-        assertThat(isStrongWithForce).isTrue();
+    public void trained_should_be_jedi() {
+        Character character = trainedHuman();
+        boolean isJedi = character.isJedi();
+        assertThat(isJedi).isTrue();
     }
 
     @Test
