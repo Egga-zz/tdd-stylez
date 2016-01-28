@@ -11,24 +11,24 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ApplicationTest {
+public class ControllerTest {
 
     @Mock
-    MessageQueue messageQueue;
+    Service service;
 
     @InjectMocks
-    Application application;
+    Controller controller;
 
     @Test
     public void it_should_collaborate() {
-        when(messageQueue.receive()).thenReturn("Fetched value");
-        String fetched = application.receive();
+        when(service.receive()).thenReturn("Fetched value");
+        String fetched = controller.receive();
         assertThat(fetched).isEqualTo("Fetched value");
     }
 
     @Test
     public void it_should_verify() {
-        application.send("some value");
-        verify(messageQueue).send("some value");
+        controller.send("some value");
+        verify(service).send("some value");
     }
 }

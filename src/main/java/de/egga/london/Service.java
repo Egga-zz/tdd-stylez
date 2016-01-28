@@ -1,6 +1,6 @@
 package de.egga.london;
 
-public class MessageQueue {
+public class Service {
 
     public void send(String value) {
 
