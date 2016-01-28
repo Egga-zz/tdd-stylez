@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ThingTestAssertJ {
+public class ThingTest {
 
     @Test
     public void it_should_call_for_action() {
