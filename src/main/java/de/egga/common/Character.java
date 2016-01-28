@@ -3,7 +3,7 @@ package de.egga.common;
 import static de.egga.common.Species.HUMAN;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 
-public class Being {
+public class Character {
 
     private static final String DEFAULT_NAME = "FN 2187";
 
@@ -11,11 +11,11 @@ public class Being {
     private final String name;
     private boolean isStrongWithForce = false;
 
-    public Being(Species species) {
+    public Character(Species species) {
         this(species, null);
     }
 
-    public Being(Species species, String name) {
+    public Character(Species species, String name) {
         this.species = species;
         this.name = validateName(name);
     }
