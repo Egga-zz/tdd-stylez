@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Planet {
 
-    private List<String> citizens = new ArrayList<String>();
+    private List<Being> citizens = new ArrayList<>();
 
-    public void add(String name) {
-        citizens.add(name);
+    public void add(Being being) {
+        citizens.add(being);
     }
 
-    public List<String> getCitizens() {
+    public List<Being> getCitizens() {
         return citizens;
     }
 }
